@@ -38,6 +38,9 @@ export const FormDiv = styled.div`
   padding: 0 43px 43px 43px;
   transition: opacity 3s;
   background-color: ${({ theme }) => theme.colors?.white};
+  ${responsive("$medium")`
+      0 21px 21px 21px;
+   `};
 
   .overflow {
     width: 100%;
@@ -46,5 +49,9 @@ export const FormDiv = styled.div`
     margin: 48px 0;
     position: relative;
     background-color: #fefdff;
+
+    ${responsive("$medium")`
+        padding: 16px 5%;
+   `};
   }
 `;
